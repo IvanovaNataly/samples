@@ -131,9 +131,12 @@ p.codrops-demos{
     display: block;
     padding: 14px;
 }
-p.codrops-demos a,
-p.codrops-demos a.current-demo,
-p.codrops-demos a.current-demo:hover{
+
+.select-demo-input {
+    display: none;
+}
+
+.select-demo-label {
     display: inline-block;
     font-size: 11px;
     font-style: italic;
@@ -147,12 +150,16 @@ p.codrops-demos a.current-demo:hover{
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     background: rgba(104,171,194,0.5);
+    transition: all 500ms;
+    cursor: pointer;
 }
-p.codrops-demos a:hover{
+
+.select-demo-label:hover{
     background: #4fa2c4;
 }
-p.codrops-demos a.current-demo,
-p.codrops-demos a.current-demo:hover{
+
+.select-demo-input:checked + .select-demo-label,
+.select-demo-input:checked + .select-demo-label:hover {
     color: rgba(104,171,194,1);
     background: rgba(255,255,255,0.9);
     box-shadow: 0px 1px 1px rgba(0,0,0,0.1);

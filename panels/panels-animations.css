@@ -1,0 +1,65 @@
+
+
+/*Demo 1*/
+@-webkit-keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@-moz-keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@-o-keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@-ms-keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+
+/*Demo 3*/
+@-webkit-keyframes slideOutUp{
+    0%{ top: 0px; }
+    100%{ top: -400px; }
+}
+@-webkit-keyframes slideOutDown{
+    0%{ top: 0px; }
+    100%{ top: 400px; }
+}
+@-moz-keyframes slideOutUp{
+    0%{ top: 0px; }
+    100%{ top: -400px; }
+}
+@-moz-keyframes slideOutDown{
+    0%{ top: 0px; }
+    100%{ top: 400px; }
+}
+@-o-keyframes slideOutUp{
+    0%{ top: 0px; }
+    100%{ top: -400px; }
+}
+@-o-keyframes slideOutDown{
+    0%{ top: 0px; }
+    100%{ top: 400px; }
+}
+@-ms-keyframes slideOutUp{
+    0%{ top: 0px; }
+    100%{ top: -400px; }
+}
+@-ms-keyframes slideOutDown{
+    0%{ top: 0px; }
+    100%{ top: 400px; }
+}
+@keyframes slideOutUp{
+    0%{ top: 0px; }
+    100%{ top: -400px; }
+}
+@keyframes slideOutDown{
+    0%{ top: 0px; }
+    100%{ top: 400px; }
+}
