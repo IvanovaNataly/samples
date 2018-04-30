@@ -18,10 +18,9 @@
     font-size: 24px;
     float:left;
     position: relative;
-    margin-top: 350px;
+    margin-top:350px;
     z-index: 1000;
 }
-
 .cr-container label:before{
     content:'';
     width: 34px;
@@ -34,7 +33,6 @@
     box-shadow: 0px 0px 0px 4px rgba(255,255,255,0.3);
     z-index:-1;
 }
-
 .cr-container label:after{
     width: 1px;
     height: 400px;
@@ -50,18 +48,15 @@
     bottom: -20px;
     right: 0px;
 }
-
 .cr-container label.cr-label-img-4:after{
     width: 0px;
 }
-
 .cr-container input.cr-selector-img-1:checked ~ label.cr-label-img-1,
 .cr-container input.cr-selector-img-2:checked ~ label.cr-label-img-2,
 .cr-container input.cr-selector-img-3:checked ~ label.cr-label-img-3,
 .cr-container input.cr-selector-img-4:checked ~ label.cr-label-img-4{
     color: #68abc2;
 }
-
 .cr-container input.cr-selector-img-1:checked ~ label.cr-label-img-1:before,
 .cr-container input.cr-selector-img-2:checked ~ label.cr-label-img-2:before,
 .cr-container input.cr-selector-img-3:checked ~ label.cr-label-img-3:before,
@@ -69,12 +64,9 @@
     background: #fff;
     box-shadow: 0px 0px 0px 4px rgba(104,171,194,0.6);
 }
-
 .cr-container input{
     display: none;
 }
-
-/*Images*/
 .cr-bgimg{
     width: 600px;
     height: 400px;
@@ -82,10 +74,13 @@
     left: 0px;
     top: 0px;
     z-index: 1;
+}
+
+/*Pictures*/
+.cr-bgimg{
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-
 .cr-bgimg div{
     width: 150px;
     height: 100%;
@@ -94,7 +89,6 @@
     overflow: hidden;
     background-repeat: no-repeat;
 }
-
 .cr-bgimg div span{
     position: absolute;
     width: 100%;
@@ -104,24 +98,22 @@
     z-index: 2;
     text-indent: -9000px;
 }
-
 .cr-container input.cr-selector-img-1:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(1){
-    background-image: url(images/1.jpg);
+    background-image: url(../images/1.jpg);
 }
 .cr-container input.cr-selector-img-2:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(2){
-    background-image: url(images/2.jpg);
+    background-image: url(../images/2.jpg);
 }
 .cr-container input.cr-selector-img-3:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(3){
-    background-image: url(images/3.jpg);
+    background-image: url(../images/3.jpg);
 }
 .cr-container input.cr-selector-img-4:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(4){
-    background-image: url(images/4.jpg);
+    background-image: url(../images/4.jpg);
 }
-
 .cr-bgimg div:nth-child(1) span{
     background-position: 0px 0px;
 }
@@ -135,28 +127,50 @@
     background-position: -450px 0px;
 }
 
+.cr-container input:checked ~ .cr-bgimg div span{
+    -webkit-animation: slideOut 0.6s ease-in-out;
+    -moz-animation: slideOut 0.6s ease-in-out;
+    -o-animation: slideOut 0.6s ease-in-out;
+    -ms-animation: slideOut 0.6s ease-in-out;
+    animation: slideOut 0.6s ease-in-out;
+}
+@-webkit-keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@-moz-keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@-o-keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@-ms-keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@keyframes slideOut{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
 .cr-container input.cr-selector-img-1:checked ~ .cr-bgimg div span:nth-child(1),
 .cr-container input.cr-selector-img-2:checked ~ .cr-bgimg div span:nth-child(2),
 .cr-container input.cr-selector-img-3:checked ~ .cr-bgimg div span:nth-child(3),
 .cr-container input.cr-selector-img-4:checked ~ .cr-bgimg div span:nth-child(4)
 {
+    -webkit-transition: left 0.5s ease-in-out;
+    -moz-transition: left 0.5s ease-in-out;
+    -o-transition: left 0.5s ease-in-out;
+    -ms-transition: left 0.5s ease-in-out;
     transition: left 0.5s ease-in-out;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
     animation: none;
     left: 0px;
     z-index: 10;
-}
-
-.cr-container input:checked ~ .cr-bgimg div span{
-    animation: slideOut 0.6s ease-in-out;
-}
-
-@keyframes slideOut{
-    0%{
-        left: 0px;
-    }
-    100%{
-        left: 150px;
-    }
 }
 
 /*Titles*/
@@ -169,6 +183,10 @@
     opacity: 0;
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    -ms-transition: opacity 0.8s ease-in-out;
     transition: opacity 0.8s ease-in-out;
 }
 .cr-titles h3 span:nth-child(1){
@@ -192,8 +210,7 @@
 .cr-container input.cr-selector-img-4:checked ~ .cr-titles h3:nth-child(4){
     opacity: 1;
 }
-
-/*Not to use label trick on mobile devices*/
+/* Media Query: Let's show the inputs on mobile sized browsers because they probably don't support the label trick: */
 @media screen and (max-width: 768px) {
     .cr-container input{
         display: inline;
