@@ -1,4 +1,6 @@
-
+:root {
+    --animation-odd: slideOut;
+}
 
 /*Demo 1*/
 @-webkit-keyframes slideOut{
