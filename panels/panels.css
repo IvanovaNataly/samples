@@ -93,8 +93,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0px;
-    left: -150px;
+    top: var(--top-hidden);
+    left: var(--left-hidden);
     z-index: 2;
     text-indent: -9000px;
 }
@@ -128,48 +128,29 @@
 }
 
 .cr-container input:checked ~ .cr-bgimg div span{
-    -webkit-animation: slideOut 0.6s ease-in-out;
-    -moz-animation: slideOut 0.6s ease-in-out;
-    -o-animation: slideOut 0.6s ease-in-out;
-    -ms-animation: slideOut 0.6s ease-in-out;
-    animation: slideOut 0.6s ease-in-out;
+    /*-webkit-animation: var(--animation-odd) 0.6s ease-in-out;*/
+    /*-moz-animation: var(--animation-odd) 0.6s ease-in-out;*/
+    /*-o-animation: var(--animation-odd) 0.6s ease-in-out;*/
+    /*-ms-animation: var(--animation-odd) 0.6s ease-in-out;*/
+    /*animation: var(--animation-odd) 0.6s ease-in-out;*/
 }
-@-webkit-keyframes slideOut{
-    0%{ left: 0px; }
-    100%{ left: 150px; }
-}
-@-moz-keyframes slideOut{
-    0%{ left: 0px; }
-    100%{ left: 150px; }
-}
-@-o-keyframes slideOut{
-    0%{ left: 0px; }
-    100%{ left: 150px; }
-}
-@-ms-keyframes slideOut{
-    0%{ left: 0px; }
-    100%{ left: 150px; }
-}
-@keyframes slideOut{
-    0%{ left: 0px; }
-    100%{ left: 150px; }
-}
+
 .cr-container input.cr-selector-img-1:checked ~ .cr-bgimg div span:nth-child(1),
 .cr-container input.cr-selector-img-2:checked ~ .cr-bgimg div span:nth-child(2),
 .cr-container input.cr-selector-img-3:checked ~ .cr-bgimg div span:nth-child(3),
 .cr-container input.cr-selector-img-4:checked ~ .cr-bgimg div span:nth-child(4)
 {
-    -webkit-transition: left 0.5s ease-in-out;
-    -moz-transition: left 0.5s ease-in-out;
-    -o-transition: left 0.5s ease-in-out;
-    -ms-transition: left 0.5s ease-in-out;
-    transition: left 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     -webkit-animation: none;
     -moz-animation: none;
     -o-animation: none;
     -ms-animation: none;
     animation: none;
-    left: 0px;
+    left: var(--left-shown);
     z-index: 10;
 }
 

@@ -1,5 +1,15 @@
-:root {
-    --animation-odd: slideOut;
+.select-demo-1:checked ~ .cr-bgimg div span{
+    /*--animation-odd: slideOut;*/
+    --top-hidden: 0;
+    --left-hidden: -150px;
+    --left-shown: 0;
+}
+
+.select-demo-2:checked {
+    /*--animation-odd: slideOutUp;*/
+    --left-hidden: 0;
+    --left-shown: 0;
+    --top-hidden: -400px;
 }
 
 /*Demo 1*/
