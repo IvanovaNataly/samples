@@ -152,8 +152,21 @@ p.codrops-demos{
     background: rgba(104,171,194,0.5);
     transition: all 500ms;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     top: -100px;
+}
+
+.select-demo-label-1 {
+    left: 120px;
+}
+.select-demo-label-2 {
+    left: 220px;
+}
+.select-demo-label-3 {
+    left: 320px;
+}
+.select-demo-label-4 {
+    left: 420px;
 }
 
 .select-demo-label:hover{
