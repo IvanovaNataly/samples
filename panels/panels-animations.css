@@ -1,18 +1,30 @@
 .select-demo-1:checked ~ .cr-bgimg div span {
     --animation-odd: slideOut;
-    --top-hidden: 0;
-    --left-hidden: -150px;
+    --animation-even: slideOut;
+    --top-shown: 0;
+    --left-default-odd: -150px;
+    --left-default-even: -150px;
     --left-shown: 0;
     border: 3px solid red;
 }
 
-
-
 .select-demo-2:checked ~ .cr-bgimg div span {
-    --animation-odd: slideOutUp;
-    --left-hidden: 0;
+    --animation-odd: slideOutRight;
+    --animation-even: slideOutLeft;
+    --top-shown: 0;
+    --left-default-odd: -150px;
+    --left-default-even: 150px;
     --left-shown: 0;
-    --top-hidden: -400px;
+    border: 3px solid black;
+}
+
+.select-demo-3:checked ~ .cr-bgimg div span {
+    --animation-odd: slideOutUp;
+    --animation-even: slideOutDown;
+    --top-default-odd: 400px;
+    --top-default-even: -400px;
+    --top-shown: 0;
+    --left-shown: 0;
     border: 3px solid black;
 }
 
@@ -36,6 +48,49 @@
 @keyframes slideOut{
     0%{ left: 0px; }
     100%{ left: 150px; }
+}
+
+/*Demo 2*/
+@-webkit-keyframes slideOutRight{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@-moz-keyframes slideOutRight{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@-o-keyframes slideOutRight{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@-ms-keyframes slideOutRight{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+@keyframes slideOutRight{
+    0%{ left: 0px; }
+    100%{ left: 150px; }
+}
+
+@-webkit-keyframes slideOutLeft{
+    0%{ left: 0px; }
+    100%{ left: -150px; }
+}
+@-moz-keyframes slideOutLeft{
+    0%{ left: 0px; }
+    100%{ left: -150px; }
+}
+@-o-keyframes slideOutLeft{
+    0%{ left: 0px; }
+    100%{ left: -150px; }
+}
+@-ms-keyframes slideOutLeft{
+    0%{ left: 0px; }
+    100%{ left: -150px; }
+}
+@keyframes slideOutLeft{
+    0%{ left: 0px; }
+    100%{ left: -150px; }
 }
 
 /*Demo 3*/
