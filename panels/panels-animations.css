@@ -1,21 +1,15 @@
 .select-demo-1:checked ~ .cr-bgimg div span {
     --animation-odd: slideOut;
     --animation-even: slideOut;
-    --top-shown: 0;
     --left-default-odd: -150px;
     --left-default-even: -150px;
-    --left-shown: 0;
-    border: 3px solid red;
 }
 
 .select-demo-2:checked ~ .cr-bgimg div span {
     --animation-odd: slideOutRight;
     --animation-even: slideOutLeft;
-    --top-shown: 0;
     --left-default-odd: -150px;
     --left-default-even: 150px;
-    --left-shown: 0;
-    border: 3px solid black;
 }
 
 .select-demo-3:checked ~ .cr-bgimg div span {
@@ -23,23 +17,18 @@
     --animation-even: slideOutDown;
     --top-default-odd: 400px;
     --top-default-even: -400px;
-    --top-shown: 0;
-    --left-shown: 0;
-    border: 3px solid black;
 }
 
 .select-demo-4:checked ~ .cr-bgimg div span {
     --animation-odd: scaleOut;
     --animation-even: scaleOut;
-    --top-shown: 0;
-    --left-shown: 0;
     --transform-default: scale(1.5);
     --opacity-default: 0;
     --z-index-default: 2;
     --transform-shown: scale(1);
     --opacity-shown: 1;
     --z-index-shown: 10000;
-    border: 3px solid blue;
+    --transition-shown: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.6s;
 }
 
 /*Demo 1*/
