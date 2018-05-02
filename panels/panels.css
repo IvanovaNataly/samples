@@ -120,7 +120,6 @@
     transform: var(--transform-default, none);
     opacity: var(--opacity-default, 1);
     z-index: var(--z-index-default, 2);
-
 }
 
 .cr-bgimg div:nth-child(even) span {
