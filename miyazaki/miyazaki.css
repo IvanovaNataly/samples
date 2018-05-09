@@ -83,19 +83,19 @@
 
 .cr-container input.cr-selector-img-1:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(1){
-    background-image: url(images/1.jpg);
+    background-image: url(images/07.jpg);
 }
 .cr-container input.cr-selector-img-2:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(2){
-    background-image: url(images/2.jpg);
+    background-image: url(images/03.jpg);
 }
 .cr-container input.cr-selector-img-3:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(3){
-    background-image: url(images/3.jpg);
+    background-image: url(images/09.jpg);
 }
 .cr-container input.cr-selector-img-4:checked ~ .cr-bgimg,
 .cr-bgimg div span:nth-child(4){
-    background-image: url(images/4.jpg);
+    background-image: url(images/10.jpg);
 }
 .cr-bgimg div:nth-child(1) span{
     background-position: 0px 0px;
