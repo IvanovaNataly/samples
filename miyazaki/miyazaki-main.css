@@ -134,7 +134,7 @@ p.codrops-demos{
     line-height: 100px;
     color: rgba(0,0,0,0.7);
     font-weight: 500;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.04);
     border-bottom: 1px solid rgba(0,0,0,0.5);
     border-left: 1px solid rgba(0,0,0,0.5);
     box-sizing: border-box;
@@ -164,11 +164,13 @@ p.codrops-demos{
 
 .select-demo-label:hover {
     color: #fff;
+    font-weight: 400;
     background: rgba(0,0,0,0.5);
 }
 
 .select-demo-input:checked + .select-demo-label,
 .select-demo-input:checked + .select-demo-label:hover {
     color: #fff;
+    font-weight: 400;
     background: rgba(0,0,0,0.7);
 }
