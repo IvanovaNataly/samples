@@ -43,7 +43,7 @@ body{
     background-color: rgba(43,73,71,0.2);
     font-weight: 400;
     font-size: 15px;
-    color: #3a2127;
+    color: #38141c;
 }
 a{
     color: #333;
@@ -58,8 +58,9 @@ a{
 }
 
 .page-title {
-    font-size: 26px;
+    font-size: 51px;
     font-weight: 600;
+    text-shadow: 3px 2px 3px black;
 }
 
 /*main section*/
